@@ -58,6 +58,8 @@ p {
     margin: 2rem 0;
     color: var(--text-color);
     letter-spacing: var(--letter-spacing);
+    font-size: 1.3rem;
+    /* text-align: justify; */
 }
 
 h1,
@@ -136,6 +138,11 @@ HEADER STYLE
     width: var(--fixed-width);
 }
 
+.side-border {
+    border-left: 0.6rem solid var(--orange);
+    padding-left: 1rem;
+}
+
 .logo-span {
     color: var(--orange);
     font-weight: bold;
@@ -170,8 +177,7 @@ SECTION-ONE
 #section-one,
 #section-two {
     text-align: center;
-    margin: 12em 1rem;
-
+    margin: 12rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,9 +214,9 @@ SECTION-ONE
 /*-------------------------------------------
 SECTION-TWO
 -------------------------------------------*/
-#section-two {
+/* #section-two {
     padding: 1rem;
-}
+} */
 
 .section-two-main {
     width: var(--max-width);
@@ -238,9 +244,7 @@ FOOER-SECTION
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3em 1rem;
-
-    /* background: RGB(151, 235, 212); */
+    padding: 3em 2rem;
 }
 
 .footer-div {
@@ -288,7 +292,8 @@ MEDIA QUORIES 1200px
         width: 100%;
     }
 
-    .section-one-main {
+    .section-one-main,
+    .section-two-main {
         max-width: 30rem;
     }
 
@@ -305,11 +310,25 @@ MEDIA QUORIES 992px
 }
 
 /*-------------------------------------------
+MEDIA QUORIES 768px
+-------------------------------------------*/
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 70%;
+    }
+
+    .header-div {
+        padding: 0 2rem;
+    }
+}
+
+/*-------------------------------------------
 MEDIA QUORIES 576px
 -------------------------------------------*/
 
 @media screen and (max-width:576px) {
     html {
-        font-size: 70%;
+        font-size: 60%;
     }
 }
