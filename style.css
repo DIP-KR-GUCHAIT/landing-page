@@ -38,7 +38,7 @@
     --transition: 0.3s ease-in-out all;
     --max-width: 75rem;
     --fixed-width: 50rem;
-    --gap: 1em;
+    --gap: 2rem;
 }
 
 html {
@@ -149,24 +149,29 @@ HEADER STYLE
 }
 
 .btn {
-    /* border: 3px solid var(--orange); */
     padding: 1em 5em;
     background-color: none;
-    background-color: yellow;
+    background-color: var(--white);
     cursor: pointer;
-    font-size: large;
+    font-size: 15px;
     font-weight: 900;
-    color: black;
-    letter-spacing: var(--letter-spacing);
+    color: rgb(0, 0, 0);
     display: inline-block;
     font-family: 'Jost', sans-serif;
+    border-radius: var(--border-radius);
+
 }
 
 .btn:hover {
-    background-color: green;
-    color: rgb(255, 255, 255);
+    color: var(--orange);
     transition: var(--transition);
-    box-shadow: 10px 10px 0 yellow;
+    box-shadow: 10px 10px 0 var(--orange);
+}
+
+.btn-font {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
 }
 
 
